@@ -48,9 +48,16 @@ void main()
     x++;
     j++;
    }}}}
-
-
-
 OUTPUT:
+SYMBOL TABLE
+SYMBOL        ADDR                 TYPE
+A             25731088             IDENTIFIER
++             25731168             OPERATOR
+B             25731232             IDENTIFIER
++             25731312              OPERATOR
+C             25731476              IDENTIFIER
+=             25731556              OPERATOR
+D              25731636             IDENTIFIER
+
 
 
