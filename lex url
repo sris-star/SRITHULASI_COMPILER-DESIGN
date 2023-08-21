@@ -1,0 +1,19 @@
+%{
+int c=0;
+%}
+%%
+["https://www"]["."][a-z0-9!@#$%^&*()]+".com"|".edu"|".in" {c=1;}
+%%
+int yywrap(void){}
+int main()
+{
+printf("enter the url : ");
+yylex();
+if(c==1)
+printf("\nvalid..");
+else
+printf("\ninvalid..");
+}
+output:
+enter an url:greeks organization
+invalid url
