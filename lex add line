@@ -1,0 +1,25 @@
+%{
+#include<stdio.h>
+int ln=0;
+%}
+%%
+.* {ln++;
+fprintf(yyout,"\n%d:%s",ln,yytext);}
+%%
+int yywrap(){}
+int main()
+{
+yyin=fopen("simple.txt","r");
+yyout=fopen("out.txt","w");
+yylex();
+return 0;
+}
+output:
+# include<stdio.h>
+int main()
+{
+printf("greeks for greeks");
+printf("this is a testing program");
+printf("see the lines number added in left output");
+return 0;
+}
