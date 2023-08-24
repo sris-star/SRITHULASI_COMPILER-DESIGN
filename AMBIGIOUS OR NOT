@@ -34,4 +34,13 @@ int main() {
 
     return 0;
 }
+output:
+Input: id+id*id
+The grammar is not ambiguous for the given input.
+
+--------------------------------
+Process exited after 5.066 seconds with return value 0
+Press any key to continue . . .
+
+
  
