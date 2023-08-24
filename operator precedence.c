@@ -21,6 +21,11 @@ typedef struct {
 void initialize(Stack *s) {
     s->top = -1;
 }
+output:
+Value of (a + b) * c / d is : 90
+Value of ((a + b) * c) / d is  : 90
+Value of (a + b) * (c / d) is  : 90
+Value of a + (b * c) / d is  : 50
 
 void push(Stack *s, char c) {
     s->stack[++s->top] = c;
